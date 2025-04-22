@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" import="test.*"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Banking Application</title>
+</head>
+<body>
+<%
+RegisterBean rb = (RegisterBean) session.getAttribute("rbean");
+
+if (rb != null) {
+    out.println("<h2>Login successful: " + rb.getUname() + "</h2>");
+} else {
+    out.println("<h2>Session expired or user not found. Please log in again.</h2>");
+}
+%>
+
+<h1>Banking Application</h1>
+<nav>
+    <ul>
+        <li><a href="Balance.html">Balance</a></li>
+        <li><a href="Deposit.html">Deposit</a></li>
+        <li><a href="Withdraw.html">Withdraw</a></li>
+        <li><a href="TransferMoney.html">Transfer Money</a></li>
+        <li><a href="CloseAccount.html">Close Account</a></li>
+        <li><a href="About.html">About</a></li>
+    </ul>
+</nav>
+</body>
+</html>

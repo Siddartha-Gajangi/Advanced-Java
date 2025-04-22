@@ -1,0 +1,6 @@
+127.0.0.1 - - [10/Mar/2025:14:45:24 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [10/Mar/2025:14:45:26 +0530] "GET /ServletApplication-5/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [10/Mar/2025:14:45:26 +0530] "GET /favicon.ico HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [10/Mar/2025:14:45:43 +0530] "POST /ServletApplication-5/dis HTTP/1.1" 200 604
+0:0:0:0:0:0:0:1 - - [10/Mar/2025:14:46:10 +0530] "POST /ServletApplication-5/dis HTTP/1.1" 200 552
+0:0:0:0:0:0:0:1 - - [10/Mar/2025:14:48:11 +0530] "POST /ServletApplication-5/dis HTTP/1.1" 200 528

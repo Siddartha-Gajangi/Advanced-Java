@@ -1,0 +1,794 @@
+!SESSION 2025-04-18 12:35:47.432 -----------------------------------------------
+eclipse.buildId=4.34.0.20241128-0756
+java.version=23.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data file:/C:/Users/gajan/eclipse-workspace/
+
+This is a continuation of log file C:\Users\gajan\eclipse-workspace\.metadata\.bak_0.log
+Created Time: 2025-04-18 12:35:52.227
+
+!ENTRY org.eclipse.equinox.app 0 0 2025-04-18 12:35:52.227
+!MESSAGE Product org.eclipse.epp.package.jee.product could not be found.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-04-18 12:35:53.099
+!MESSAGE Logback config file: C:\Users\gajan\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-04-18 12:35:53.662
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-18 12:35:53.662
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-04-18 12:35:54.042
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-18 12:35:54.042
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-04-18 12:36:00.753
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\gajan'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-04-18 12:38:03.621
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\gajan\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_23.0.2.v20250131-0604\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Dspring.config.location=classpath:/application.properties
+-Xlog:jni+resolve=off
+-XX:ErrorFile=C:/Users/gajan/eclipse-workspace/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1744960083621
+-Dlanguageserver.hover-timeout=225
+-jar
+C:\Users\gajan\eclipse\jee-2024-12\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.61.1.202503181316\servers\spring-boot-language-server\spring-boot-language-server-1.61.1-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-18 12:38:03.621
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-04-18 12:38:03.629
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 20288
+
+!ENTRY org.eclipse.jface 2 0 2025-04-18 12:39:17.805
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-04-18 12:39:17.805
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolInWorkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolInWorkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.jst.jee 4 2 2025-04-18 12:39:53.712
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jst.jee".
+!STACK 0
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$1DiagnosticWrappedException: org.xml.sax.SAXParseExceptionpublicId: platform:/resource/BANK Application/src/main/webapp/WEB-INF/web.xml; systemId: platform:/resource/BANK%20Application/src/main/webapp/WEB-INF/web.xml; lineNumber: 1; columnNumber: 1; Premature end of file.
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.handleDemandLoadException(ResourceSetImpl.java:319)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:278)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.getResource(ProjectResourceSetImpl.java:1083)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.getModelResource(JEE5ModelProvider.java:187)
+	at org.eclipse.jst.jee.model.internal.Web25ModelProvider.getModelObject(Web25ModelProvider.java:44)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.getModelObject(JEE5ModelProvider.java:238)
+	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.getXmlWebApp(Web25MergedModelProvider.java:59)
+	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.internalModelChanged(Web25MergedModelProvider.java:156)
+	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.xmlModelChanged(Web25MergedModelProvider.java:147)
+	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider$XmlModelListener.modelsChanged(AbstractMergedModelProvider.java:93)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider$NotifyRunner.run(JEE5ModelProvider.java:483)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.notifyListeners(JEE5ModelProvider.java:456)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.resourceChanged(JEE5ModelProvider.java:117)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider$ResourceAdapter.notifyChanged(JEE5ModelProvider.java:81)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.setModified(ResourceImpl.java:1867)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl$ContentsEList.modified(ResourceImpl.java:486)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl$ContentsEList.didRemove(ResourceImpl.java:447)
+	at org.eclipse.emf.common.util.AbstractEList.didClear(AbstractEList.java:170)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl$ContentsEList.didClear(ResourceImpl.java:466)
+	at org.eclipse.emf.common.util.BasicEList.clear(BasicEList.java:638)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.doClear(NotifyingListImpl.java:1158)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.clear(NotifyingListImpl.java:1085)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.doUnload(ResourceImpl.java:1699)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doUnload(XMLResourceImpl.java:719)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.unload(ResourceImpl.java:1721)
+	at org.eclipse.wst.common.internal.emfworkbench.integration.ResourceSetWorkbenchEditSynchronizer.processDeferredUnloadedResources(ResourceSetWorkbenchEditSynchronizer.java:164)
+	at org.eclipse.wst.common.internal.emfworkbench.integration.ResourceSetWorkbenchEditSynchronizer.processDeferredResources(ResourceSetWorkbenchEditSynchronizer.java:233)
+	at org.eclipse.wst.common.internal.emfworkbench.integration.ResourceSetWorkbenchEditSynchronizer.resourceChanged(ResourceSetWorkbenchEditSynchronizer.java:141)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:465)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1593)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2471)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2482)
+	at org.eclipse.ui.ide.undo.AbstractWorkspaceOperation.execute(AbstractWorkspaceOperation.java:199)
+	at org.eclipse.ui.dialogs.WizardNewFileCreationPage.lambda$1(WizardNewFileCreationPage.java:405)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Caused by: org.xml.sax.SAXParseExceptionpublicId: platform:/resource/BANK Application/src/main/webapp/WEB-INF/web.xml; systemId: platform:/resource/BANK%20Application/src/main/webapp/WEB-INF/web.xml; lineNumber: 1; columnNumber: 1; Premature end of file.
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:1043)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:635)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:113)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:551)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:890)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:826)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:134)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1225)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:326)
+	at org.eclipse.emf.ecore.xmi.impl.XMLLoadImpl.load(XMLLoadImpl.java:175)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:260)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1563)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1342)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.demandLoad(ProjectResourceSetImpl.java:830)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	... 39 more
+
+!ENTRY org.eclipse.jst.jee 4 0 2025-04-18 12:39:53.713
+!MESSAGE org.xml.sax.SAXParseExceptionpublicId: platform:/resource/BANK Application/src/main/webapp/WEB-INF/web.xml; systemId: platform:/resource/BANK%20Application/src/main/webapp/WEB-INF/web.xml; lineNumber: 1; columnNumber: 1; Premature end of file.
+!STACK 0
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$1DiagnosticWrappedException: org.xml.sax.SAXParseExceptionpublicId: platform:/resource/BANK Application/src/main/webapp/WEB-INF/web.xml; systemId: platform:/resource/BANK%20Application/src/main/webapp/WEB-INF/web.xml; lineNumber: 1; columnNumber: 1; Premature end of file.
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.handleDemandLoadException(ResourceSetImpl.java:319)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:278)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.getResource(ProjectResourceSetImpl.java:1083)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.getModelResource(JEE5ModelProvider.java:187)
+	at org.eclipse.jst.jee.model.internal.Web25ModelProvider.getModelObject(Web25ModelProvider.java:44)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.getModelObject(JEE5ModelProvider.java:238)
+	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.getXmlWebApp(Web25MergedModelProvider.java:59)
+	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.internalModelChanged(Web25MergedModelProvider.java:156)
+	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.xmlModelChanged(Web25MergedModelProvider.java:147)
+	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider$XmlModelListener.modelsChanged(AbstractMergedModelProvider.java:93)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider$NotifyRunner.run(JEE5ModelProvider.java:483)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.notifyListeners(JEE5ModelProvider.java:456)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.resourceChanged(JEE5ModelProvider.java:117)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider$ResourceAdapter.notifyChanged(JEE5ModelProvider.java:81)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.setModified(ResourceImpl.java:1867)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl$ContentsEList.modified(ResourceImpl.java:486)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl$ContentsEList.didRemove(ResourceImpl.java:447)
+	at org.eclipse.emf.common.util.AbstractEList.didClear(AbstractEList.java:170)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl$ContentsEList.didClear(ResourceImpl.java:466)
+	at org.eclipse.emf.common.util.BasicEList.clear(BasicEList.java:638)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.doClear(NotifyingListImpl.java:1158)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.clear(NotifyingListImpl.java:1085)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.doUnload(ResourceImpl.java:1699)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doUnload(XMLResourceImpl.java:719)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.unload(ResourceImpl.java:1721)
+	at org.eclipse.wst.common.internal.emfworkbench.integration.ResourceSetWorkbenchEditSynchronizer.processDeferredUnloadedResources(ResourceSetWorkbenchEditSynchronizer.java:164)
+	at org.eclipse.wst.common.internal.emfworkbench.integration.ResourceSetWorkbenchEditSynchronizer.processDeferredResources(ResourceSetWorkbenchEditSynchronizer.java:233)
+	at org.eclipse.wst.common.internal.emfworkbench.integration.ResourceSetWorkbenchEditSynchronizer.resourceChanged(ResourceSetWorkbenchEditSynchronizer.java:141)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:465)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1593)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2471)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2482)
+	at org.eclipse.ui.ide.undo.AbstractWorkspaceOperation.execute(AbstractWorkspaceOperation.java:199)
+	at org.eclipse.ui.dialogs.WizardNewFileCreationPage.lambda$1(WizardNewFileCreationPage.java:405)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Caused by: org.xml.sax.SAXParseExceptionpublicId: platform:/resource/BANK Application/src/main/webapp/WEB-INF/web.xml; systemId: platform:/resource/BANK%20Application/src/main/webapp/WEB-INF/web.xml; lineNumber: 1; columnNumber: 1; Premature end of file.
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:1043)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:635)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:113)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:551)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:890)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:826)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:134)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1225)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:326)
+	at org.eclipse.emf.ecore.xmi.impl.XMLLoadImpl.load(XMLLoadImpl.java:175)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:260)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1563)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1342)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.demandLoad(ProjectResourceSetImpl.java:830)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	... 39 more
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-04-18 12:43:00.073
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:2004)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2139)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2025-04-18 18:32:49.442
+!MESSAGE Invalid path: '/BANK Application/src/main/webapp/Balance.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/BANK Application/src/main/webapp/Balance.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1429)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1419)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.isCactusJunitTest(WebDeployableArtifactUtil.java:259)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:166)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.getModuleArtifacts(ServerPlugin.java:1346)
+	at org.eclipse.wst.server.ui.internal.actions.RunOnServerActionDelegate.selectionChanged(RunOnServerActionDelegate.java:849)
+	at org.eclipse.wst.server.ui.internal.ServerLaunchShortcut.launch(ServerLaunchShortcut.java:42)
+	at org.eclipse.wst.server.ui.internal.ServerLaunchShortcut.launch(ServerLaunchShortcut.java:58)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.launch(LaunchShortcutExtension.java:412)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launchShortcut(ContextRunner.java:262)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.selectAndLaunch(ContextRunner.java:188)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launch(ContextRunner.java:100)
+	at org.eclipse.debug.ui.actions.AbstractLaunchToolbarAction.runInternal(AbstractLaunchToolbarAction.java:90)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.runWithEvent(AbstractLaunchHistoryAction.java:420)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:229)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:218)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:581)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$5(ActionContributionItem.java:454)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4404)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1173)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4202)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3790)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:663)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:570)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:178)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2025-04-18 18:32:49.463
+!MESSAGE Invalid path: '/BANK Application/src/main/webapp/Balance.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2025-04-18 18:32:49.484
+!MESSAGE Invalid path: '/BANK Application/src/main/webapp/Balance.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/BANK Application/src/main/webapp/Balance.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1429)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1419)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getServletClassName(WebDeployableArtifactUtil.java:276)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:175)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.getModuleArtifacts(ServerPlugin.java:1346)
+	at org.eclipse.wst.server.ui.internal.actions.RunOnServerActionDelegate.selectionChanged(RunOnServerActionDelegate.java:849)
+	at org.eclipse.wst.server.ui.internal.ServerLaunchShortcut.launch(ServerLaunchShortcut.java:42)
+	at org.eclipse.wst.server.ui.internal.ServerLaunchShortcut.launch(ServerLaunchShortcut.java:58)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.launch(LaunchShortcutExtension.java:412)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launchShortcut(ContextRunner.java:262)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.selectAndLaunch(ContextRunner.java:188)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launch(ContextRunner.java:100)
+	at org.eclipse.debug.ui.actions.AbstractLaunchToolbarAction.runInternal(AbstractLaunchToolbarAction.java:90)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.runWithEvent(AbstractLaunchHistoryAction.java:420)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:229)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:218)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:581)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$5(ActionContributionItem.java:454)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4404)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1173)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4202)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3790)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:663)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:570)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:178)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2025-04-18 18:32:49.484
+!MESSAGE Invalid path: '/BANK Application/src/main/webapp/Balance.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2025-04-18 18:32:49.485
+!MESSAGE Invalid path: '/BANK Application/src/main/webapp/Balance.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/BANK Application/src/main/webapp/Balance.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1429)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1419)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getServletClassName(WebDeployableArtifactUtil.java:280)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:175)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.getModuleArtifacts(ServerPlugin.java:1346)
+	at org.eclipse.wst.server.ui.internal.actions.RunOnServerActionDelegate.selectionChanged(RunOnServerActionDelegate.java:849)
+	at org.eclipse.wst.server.ui.internal.ServerLaunchShortcut.launch(ServerLaunchShortcut.java:42)
+	at org.eclipse.wst.server.ui.internal.ServerLaunchShortcut.launch(ServerLaunchShortcut.java:58)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.launch(LaunchShortcutExtension.java:412)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launchShortcut(ContextRunner.java:262)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.selectAndLaunch(ContextRunner.java:188)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launch(ContextRunner.java:100)
+	at org.eclipse.debug.ui.actions.AbstractLaunchToolbarAction.runInternal(AbstractLaunchToolbarAction.java:90)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.runWithEvent(AbstractLaunchHistoryAction.java:420)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:229)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:218)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:581)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$5(ActionContributionItem.java:454)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4404)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1173)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4202)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3790)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:663)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:570)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:178)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2025-04-18 18:32:49.485
+!MESSAGE Invalid path: '/BANK Application/src/main/webapp/Balance.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2025-04-18 18:32:49.803
+!MESSAGE Invalid path: '/BANK Application/src/main/webapp/Balance.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/BANK Application/src/main/webapp/Balance.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1429)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1419)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.isCactusJunitTest(WebDeployableArtifactUtil.java:259)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:166)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.getModuleArtifacts(ServerPlugin.java:1346)
+	at org.eclipse.wst.server.ui.internal.actions.RunOnServerActionDelegate.run(RunOnServerActionDelegate.java:186)
+	at org.eclipse.wst.server.ui.internal.actions.RunOnServerActionDelegate.run(RunOnServerActionDelegate.java:766)
+	at org.eclipse.wst.server.ui.internal.ServerLaunchShortcut.launch(ServerLaunchShortcut.java:43)
+	at org.eclipse.wst.server.ui.internal.ServerLaunchShortcut.launch(ServerLaunchShortcut.java:58)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.launch(LaunchShortcutExtension.java:412)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launchShortcut(ContextRunner.java:262)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.selectAndLaunch(ContextRunner.java:188)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launch(ContextRunner.java:100)
+	at org.eclipse.debug.ui.actions.AbstractLaunchToolbarAction.runInternal(AbstractLaunchToolbarAction.java:90)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.runWithEvent(AbstractLaunchHistoryAction.java:420)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:229)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:218)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:581)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$5(ActionContributionItem.java:454)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4404)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1173)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4202)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3790)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:663)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:570)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:178)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2025-04-18 18:32:49.804
+!MESSAGE Invalid path: '/BANK Application/src/main/webapp/Balance.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2025-04-18 18:32:49.805
+!MESSAGE Invalid path: '/BANK Application/src/main/webapp/Balance.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/BANK Application/src/main/webapp/Balance.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1429)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1419)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getServletClassName(WebDeployableArtifactUtil.java:276)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:175)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.getModuleArtifacts(ServerPlugin.java:1346)
+	at org.eclipse.wst.server.ui.internal.actions.RunOnServerActionDelegate.run(RunOnServerActionDelegate.java:186)
+	at org.eclipse.wst.server.ui.internal.actions.RunOnServerActionDelegate.run(RunOnServerActionDelegate.java:766)
+	at org.eclipse.wst.server.ui.internal.ServerLaunchShortcut.launch(ServerLaunchShortcut.java:43)
+	at org.eclipse.wst.server.ui.internal.ServerLaunchShortcut.launch(ServerLaunchShortcut.java:58)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.launch(LaunchShortcutExtension.java:412)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launchShortcut(ContextRunner.java:262)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.selectAndLaunch(ContextRunner.java:188)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launch(ContextRunner.java:100)
+	at org.eclipse.debug.ui.actions.AbstractLaunchToolbarAction.runInternal(AbstractLaunchToolbarAction.java:90)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.runWithEvent(AbstractLaunchHistoryAction.java:420)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:229)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:218)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:581)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$5(ActionContributionItem.java:454)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4404)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1173)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4202)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3790)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:663)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:570)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:178)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2025-04-18 18:32:49.805
+!MESSAGE Invalid path: '/BANK Application/src/main/webapp/Balance.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2025-04-18 18:32:49.806
+!MESSAGE Invalid path: '/BANK Application/src/main/webapp/Balance.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/BANK Application/src/main/webapp/Balance.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1429)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1419)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getServletClassName(WebDeployableArtifactUtil.java:280)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:175)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.getModuleArtifacts(ServerPlugin.java:1346)
+	at org.eclipse.wst.server.ui.internal.actions.RunOnServerActionDelegate.run(RunOnServerActionDelegate.java:186)
+	at org.eclipse.wst.server.ui.internal.actions.RunOnServerActionDelegate.run(RunOnServerActionDelegate.java:766)
+	at org.eclipse.wst.server.ui.internal.ServerLaunchShortcut.launch(ServerLaunchShortcut.java:43)
+	at org.eclipse.wst.server.ui.internal.ServerLaunchShortcut.launch(ServerLaunchShortcut.java:58)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.launch(LaunchShortcutExtension.java:412)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launchShortcut(ContextRunner.java:262)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.selectAndLaunch(ContextRunner.java:188)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launch(ContextRunner.java:100)
+	at org.eclipse.debug.ui.actions.AbstractLaunchToolbarAction.runInternal(AbstractLaunchToolbarAction.java:90)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.runWithEvent(AbstractLaunchHistoryAction.java:420)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:229)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:218)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:581)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$5(ActionContributionItem.java:454)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4404)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1173)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4202)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3790)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:663)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:570)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:178)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2025-04-18 18:32:49.806
+!MESSAGE Invalid path: '/BANK Application/src/main/webapp/Balance.jsp'
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-04-18 18:41:16.774
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:2004)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2139)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-04-18 18:49:56.097
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:2004)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2139)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2025-04-21 18:16:29.853 -----------------------------------------------
+eclipse.buildId=4.34.0.20241128-0756
+java.version=23.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data C:\Users\gajan\eclipse-workspace
+
+!ENTRY ch.qos.logback.classic 1 0 2025-04-21 18:16:33.821
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.epp.mpc.core 4 0 2025-04-21 18:16:34.078
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.epp.mpc.core [362]
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.epp.mpc.core [osgi.identity; type="osgi.bundle"; version:Version="1.11.0.v20240709-1650"; osgi.identity="org.eclipse.epp.mpc.core"; singleton:="true"] because it is exposed to package 'org.apache.hc.core5.http' from resources org.apache.httpcomponents.core5.httpcore5 [osgi.identity; type="osgi.bundle"; version:Version="5.2.3.v20230922-1600"; osgi.identity="org.apache.httpcomponents.core5.httpcore5"] and org.apache.httpcomponents.core5.httpcore5 [osgi.identity; type="osgi.bundle"; version:Version="5.3.2.v20250110-0800"; osgi.identity="org.apache.httpcomponents.core5.httpcore5"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.epp.mpc.core [osgi.identity; type="osgi.bundle"; version:Version="1.11.0.v20240709-1650"; osgi.identity="org.eclipse.epp.mpc.core"; singleton:="true"]
+    import: (&(osgi.wiring.package=org.apache.hc.core5.http)(&(version>=5.1.0)(!(version>=5.3.0))))
+     |
+    export: osgi.wiring.package: org.apache.hc.core5.http
+  org.apache.httpcomponents.core5.httpcore5 [osgi.identity; type="osgi.bundle"; version:Version="5.2.3.v20230922-1600"; osgi.identity="org.apache.httpcomponents.core5.httpcore5"]
+
+Chain 2:
+  org.eclipse.epp.mpc.core [osgi.identity; type="osgi.bundle"; version:Version="1.11.0.v20240709-1650"; osgi.identity="org.eclipse.epp.mpc.core"; singleton:="true"]
+    import: (&(osgi.wiring.package=org.apache.hc.client5.http)(&(version>=5.1.0)(!(version>=5.4.0))))
+     |
+    export: osgi.wiring.package=org.apache.hc.client5.http; uses:=org.apache.hc.core5.http
+  org.apache.httpcomponents.client5.httpclient5 [osgi.identity; type="osgi.bundle"; version:Version="5.3.1.v20240126-0900"; osgi.identity="org.apache.httpcomponents.client5.httpclient5"]
+    import: (&(osgi.wiring.package=org.apache.hc.core5.http)(&(version>=5.2.0)(!(version>=6.0.0))))
+     |
+    export: osgi.wiring.package: org.apache.hc.core5.http
+  org.apache.httpcomponents.core5.httpcore5 [osgi.identity; type="osgi.bundle"; version:Version="5.3.2.v20250110-0800"; osgi.identity="org.apache.httpcomponents.core5.httpcore5"]
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2102)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2093)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2033)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1996)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1912)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.epp.mpc.core.win32 4 0 2025-04-21 18:16:34.106
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.epp.mpc.core.win32 [363]
+  Unresolved requirement: Import-Package: org.eclipse.epp.internal.mpc.core.transport.httpclient; bundle-version="1.11.0"
+    -> Export-Package: org.eclipse.epp.internal.mpc.core.transport.httpclient; bundle-symbolic-name="org.eclipse.epp.mpc.core"; bundle-version="1.11.0.v20240709-1650"; version="0.0.0"; x-friends:="org.eclipse.epp.mpc.core.win32"; uses:="org.apache.http.auth,  org.apache.http.protocol,  org.apache.http.impl.client,  org.apache.http,  org.eclipse.epp.mpc.core.service,  org.apache.http.client,  org.eclipse.core.runtime,  org.apache.http.client.fluent,  org.apache.http.client.protocol"
+       org.eclipse.epp.mpc.core [362]
+         No resolution report for the bundle.  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.epp.mpc.core.win32 [osgi.identity; type="osgi.bundle"; version:Version="1.11.0.v20240709-0639"; osgi.identity="org.eclipse.epp.mpc.core.win32"; singleton:="true"] because it is exposed to package 'org.apache.hc.client5.http.auth' from resources org.apache.httpcomponents.client5.httpclient5 [osgi.identity; type="osgi.bundle"; version:Version="5.3.1.v20240126-0900"; osgi.identity="org.apache.httpcomponents.client5.httpclient5"] and org.apache.httpcomponents.client5.httpclient5 [osgi.identity; type="osgi.bundle"; version:Version="5.4.1.v20241029-1100"; osgi.identity="org.apache.httpcomponents.client5.httpclient5"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.epp.mpc.core.win32 [osgi.identity; type="osgi.bundle"; version:Version="1.11.0.v20240709-0639"; osgi.identity="org.eclipse.epp.mpc.core.win32"; singleton:="true"]
+    import: (&(osgi.wiring.package=org.apache.hc.client5.http.auth)(&(version>=5.1.0)(!(version>=5.4.0))))
+     |
+    export: osgi.wiring.package: org.apache.hc.client5.http.auth
+  org.apache.httpcomponents.client5.httpclient5 [osgi.identity; type="osgi.bundle"; version:Version="5.3.1.v20240126-0900"; osgi.identity="org.apache.httpcomponents.client5.httpclient5"]
+
+Chain 2:
+  org.eclipse.epp.mpc.core.win32 [osgi.identity; type="osgi.bundle"; version:Version="1.11.0.v20240709-0639"; osgi.identity="org.eclipse.epp.mpc.core.win32"; singleton:="true"]
+    import: (&(osgi.wiring.package=org.apache.hc.client5.http.impl.win)(&(version>=5.1.0)(!(version>=5.4.0))))
+     |
+    export: osgi.wiring.package=org.apache.hc.client5.http.impl.win; uses:=org.apache.hc.client5.http.auth
+  org.apache.httpcomponents.client5.httpclient5-win [osgi.identity; type="osgi.bundle"; version:Version="5.2.3.v20231203-1619"; osgi.identity="org.apache.httpcomponents.client5.httpclient5-win"]
+    import: (&(osgi.wiring.package=org.apache.hc.client5.http.auth)(&(version>=5.2.0)(!(version>=6.0.0))))
+     |
+    export: osgi.wiring.package: org.apache.hc.client5.http.auth
+  org.apache.httpcomponents.client5.httpclient5 [osgi.identity; type="osgi.bundle"; version:Version="5.4.1.v20241029-1100"; osgi.identity="org.apache.httpcomponents.client5.httpclient5"]
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2102)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2093)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2033)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1996)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1912)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.epp.mpc.ui 4 0 2025-04-21 18:16:34.126
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.epp.mpc.ui [365]
+  Unresolved requirement: Require-Bundle: org.eclipse.epp.mpc.core; bundle-version="[1.11.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.epp.mpc.core; bundle-version="1.11.0.v20240709-1650"; singleton:="true"
+       org.eclipse.epp.mpc.core [362]
+         No resolution report for the bundle.  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.epp.mpc.core [osgi.identity; type="osgi.bundle"; version:Version="1.11.0.v20240709-1650"; osgi.identity="org.eclipse.epp.mpc.core"; singleton:="true"] because it is exposed to package 'org.apache.hc.core5.http' from resources org.apache.httpcomponents.core5.httpcore5 [osgi.identity; type="osgi.bundle"; version:Version="5.2.3.v20230922-1600"; osgi.identity="org.apache.httpcomponents.core5.httpcore5"] and org.apache.httpcomponents.core5.httpcore5 [osgi.identity; type="osgi.bundle"; version:Version="5.3.2.v20250110-0800"; osgi.identity="org.apache.httpcomponents.core5.httpcore5"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.epp.mpc.core [osgi.identity; type="osgi.bundle"; version:Version="1.11.0.v20240709-1650"; osgi.identity="org.eclipse.epp.mpc.core"; singleton:="true"]
+    import: (&(osgi.wiring.package=org.apache.hc.core5.http)(&(version>=5.1.0)(!(version>=5.3.0))))
+     |
+    export: osgi.wiring.package: org.apache.hc.core5.http
+  org.apache.httpcomponents.core5.httpcore5 [osgi.identity; type="osgi.bundle"; version:Version="5.2.3.v20230922-1600"; osgi.identity="org.apache.httpcomponents.core5.httpcore5"]
+
+Chain 2:
+  org.eclipse.epp.mpc.core [osgi.identity; type="osgi.bundle"; version:Version="1.11.0.v20240709-1650"; osgi.identity="org.eclipse.epp.mpc.core"; singleton:="true"]
+    import: (&(osgi.wiring.package=org.apache.hc.client5.http)(&(version>=5.1.0)(!(version>=5.4.0))))
+     |
+    export: osgi.wiring.package=org.apache.hc.client5.http; uses:=org.apache.hc.core5.http
+  org.apache.httpcomponents.client5.httpclient5 [osgi.identity; type="osgi.bundle"; version:Version="5.3.1.v20240126-0900"; osgi.identity="org.apache.httpcomponents.client5.httpclient5"]
+    import: (&(osgi.wiring.package=org.apache.hc.core5.http)(&(version>=5.2.0)(!(version>=6.0.0))))
+     |
+    export: osgi.wiring.package: org.apache.hc.core5.http
+  org.apache.httpcomponents.core5.httpcore5 [osgi.identity; type="osgi.bundle"; version:Version="5.3.2.v20250110-0800"; osgi.identity="org.apache.httpcomponents.core5.httpcore5"]
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2102)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2093)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2033)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1996)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1912)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY ch.qos.logback.classic 1 0 2025-04-21 18:16:35.796
+!MESSAGE Logback config file: C:\Users\gajan\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-04-21 18:16:36.438
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-21 18:16:36.438
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-04-21 18:16:36.824
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-21 18:16:36.824
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-04-21 18:16:47.356
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\gajan\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_23.0.2.v20250131-0604\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Dspring.config.location=classpath:/application.properties
+-Xlog:jni+resolve=off
+-XX:ErrorFile=C:/Users/gajan/eclipse-workspace/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1745239607346
+-Dlanguageserver.hover-timeout=225
+-jar
+C:\Users\gajan\eclipse\jee-2024-12\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.61.1.202503181316\servers\spring-boot-language-server\spring-boot-language-server-1.61.1-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-21 18:16:47.358
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-04-21 18:16:47.382
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 12036
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-04-21 18:16:53.089
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\gajan'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-04-21 18:17:21.229
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:2004)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2139)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2025-04-21 18:17:37.763
+!MESSAGE Several ports (8089, 8082) required by Tomcat v10.1 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-04-21 18:22:31.374
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:2004)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2139)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2025-04-21 18:30:15.639
+!MESSAGE Server Tomcat v10.1 Server at localhost failed to start.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2025-04-21 18:30:48.820
+!MESSAGE Server Tomcat v10.1 Server at localhost failed to start.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2025-04-21 18:31:39.038
+!MESSAGE Server Tomcat v10.1 Server at localhost failed to start.
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-04-21 18:33:34.930
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:2004)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2139)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-04-21 18:45:33.237
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:2004)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2139)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
